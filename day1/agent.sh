@@ -21,7 +21,6 @@ sed -i 's/Server=127.0.0.1/Server=${srv_ip}/' /etc/zabbix/zabbix_agentd.conf
 #  ACTIVE
 #-----
 sed -i 's/ServerActive=127.0.0.1/ServerActive=${srv_ip}/' /etc/zabbix/zabbix_agentd.conf
-echo -e 'ServerPort=10051' >> /etc/zabbix/zabbix_agentd.conf
 systemctl restart zabbix-agent
 
 #-----------------AUTO AGENT--------------------------------------
